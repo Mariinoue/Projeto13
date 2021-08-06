@@ -135,7 +135,7 @@ const updateFavorited = (req, res) => {
 const getAllMusics = (req, res) => {
   
     musics.find(function(err,musicsFound){
-        console.log('viagens encontradas');
+        
         console.log(musicsFound);
         if(err){
             res.status(500).send({ message:err.message})
